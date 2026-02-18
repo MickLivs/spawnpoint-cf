@@ -34,7 +34,7 @@ User (browser or terminal)
 
 - Cloudflare account
 - Node.js
-- Docker running locally (for `wrangler deploy`)
+- Docker running locally (for `wrangler dev` and `wrangler deploy`)
 - Custom domain with wildcard DNS (for preview URLs)
 
 ## Quick Start
@@ -52,7 +52,7 @@ curl http://localhost:8787/sandbox/user-123/exec \
   -d '{"command": "node --version"}'
 
 # Deploy
-npx wrangler deploy
+npm run deploy
 ```
 
 ## Structure

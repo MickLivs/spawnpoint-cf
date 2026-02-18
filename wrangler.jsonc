@@ -1,7 +1,8 @@
 {
   "name": "spawnpoint-cf",
   "main": "src/index.ts",
-  "compatibility_date": "2024-01-01",
+  "account_id": "b0fced99263b3b9899b421eb2d1d531a",
+  "compatibility_date": "2025-01-01",
   "compatibility_flags": ["nodejs_compat"],
   "containers": [
     {
@@ -19,6 +20,11 @@
         "name": "Sandbox"
       }
     ]
+  },
+  // Required for exposePort() preview URLs. Set to your Worker's custom domain.
+  // e.g. "sandbox.example.com" — must have wildcard DNS *.sandbox.example.com → Worker.
+  "vars": {
+    "PREVIEW_HOSTNAME": ""
   },
   "migrations": [
     {
